@@ -8,6 +8,9 @@ Recebedor PIX: **Luiz**. Landing: https://ziuluiziul.github.io/groq-round1-offer
 
 **Artigo Dev.to:** https://dev.to/ziul_941087d2c1f1edc7d824/groq-free-tier-cheatsheet-de-limites-failover-multi-modelo-pt-br-297j
 
+**Cross Ollama Dev.to:** https://dev.to/ziul_941087d2c1f1edc7d824/ollama-cloud-free-concurrent1-sem-429-playbook-pix-3k8m
+**Pages Ollama:** https://ziuluiziul.github.io/ollama-cloud-free-done-right/
+
 ## R$ 10 — tip / entrada
 QR: `qr-r10.png`
 
