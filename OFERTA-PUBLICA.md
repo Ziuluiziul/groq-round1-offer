@@ -74,3 +74,5 @@ Fontes: https://console.groq.com/docs/rate-limits · https://console.groq.com/do
 
 ## Hub multi-IA
 Catálogo Alpha + PIX: https://ziuluiziul.github.io/round1-cumulunimbus/
+
+**Alpha mesh:** OpenRouter https://ziuluiziul.github.io/openrouter-free-oferta/ · Gemini https://ziuluiziul.github.io/gemini-round1-offer/ · NVIDIA https://ziuluiziul.github.io/ane-pagamento/nim/
