@@ -6,6 +6,8 @@
 
 Recebedor PIX: **Luiz**. Landing: https://ziuluiziul.github.io/groq-round1-offer/
 
+**Artigo Dev.to:** https://dev.to/ziul_941087d2c1f1edc7d824/groq-free-tier-cheatsheet-de-limites-failover-multi-modelo-pt-br-297j
+
 ## R$ 10 — tip / entrada
 QR: `qr-r10.png`
 
