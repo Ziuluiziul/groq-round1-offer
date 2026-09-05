@@ -76,3 +76,8 @@ Fontes: https://console.groq.com/docs/rate-limits · https://console.groq.com/do
 Catálogo Alpha + PIX: https://ziuluiziul.github.io/round1-cumulunimbus/
 
 **Alpha mesh:** OpenRouter https://ziuluiziul.github.io/openrouter-free-oferta/ · Gemini https://ziuluiziul.github.io/gemini-round1-offer/ · NVIDIA https://ziuluiziul.github.io/ane-pagamento/nim/
+
+### Add-ons labor free (2026-09-05)
+- `STREAMING-SSE.md` + `stream_chat.py` — R$20
+- `JSON-MODE.md` + `json_chat.py` — R$10
+- `FIVE-429-ERRORS.md` (limpo) — R$10

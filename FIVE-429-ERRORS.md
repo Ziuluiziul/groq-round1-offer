@@ -1,51 +1,19 @@
 ---
 produto: 5 erros 429/TPM Groq Free
 preco_BRL: 10
-gerado: qwen/qwen3.6-27b
+fontes: console.groq.com/docs/rate-limits, console.groq.com/docs/deprecations
 ---
 
-<think>
-Here's a thinking process:
+# Groq Free-tier: 5 erros 429/TPM e como evitar
 
-1.  **Analyze User Input:**
-   - **Language:** PT-BR (Brazilian Portuguese)
-   - **Format:** Short guide, max 40 lines, Markdown
-   - **Title/Topic:** «Groq Free-tier: 5 erros 429/TPM e como evitar»
-   - **Content Requirements:**
-     - Practical bullets
-     - Cite ONLY `console.groq.com/docs/rate-limits` and `/deprecations`
-     - Do NOT invent RPM (Requests Per Minute) numbers
-     - Do NOT include API keys
-     - End with CTA: landing `https://ziuluiziul.github.io/groq-round1-offer/` + PIX R$10 tip
-   - **Constraints:** Max 40 lines total, strict formatting.
+O Free Plan aplica tetos de RPM/RPD/TPM/TPD (e, em alguns casos, OTPM). Estourar qualquer um devolve **429**. Números exatos: [rate-limits](https://console.groq.com/docs/rate-limits) + headers `x-ratelimit-*` da sua org — **não invente RPM**.
 
-2.  **Deconstruct Requirements:**
-   - Title: `# Groq Free-tier: 5 erros 429/TPM e como evitar`
-   - 5 practical bullet points addressing 429 errors / TPM limits
-   - Only cite the two specific URLs
-   - No RPM values, no keys
-   - CTA at the end with exact URL and PIX mention
-   - Keep it under 40 lines
-   - Language: PT-BR
+1. **Ignorar `retry-after`** — em 429, espere o valor do header (segundos) antes de reenviar.
+2. **Prompt/completion grande no mesmo minuto** — TPM/OTPM caem rápido; use `max_tokens` baixo e lotes.
+3. **Burst de requests** — respeite RPM; serialize ou fila com jitter.
+4. **Não ler `x-ratelimit-remaining-tokens`** — se estiver baixo, pause até `x-ratelimit-reset-tokens`.
+5. **Chamar modelo EOL** — IDs removidos geram erro/comportamento estranho; confira [deprecations](https://console.groq.com/docs/deprecations) e a lista live `GET /openai/v1/models`.
 
-3.  **Draft - Mental Refinement (PT-BR):**
-   # Groq Free-tier: 5 erros 429/TPM e como evitar
+Extra WAF: `User-Agent: groq-python/1.0` + HTTP/1.1 evita 403 que parece “API quebrada”.
 
-   O limite de tokens por minuto (TPM) no tier gratuito é rígido. Acumulá-los gera `429 Too Many Requests`. Veja como blindar seu fluxo:
-
-   - **Espere o cabeçalho `x-ratelimit-reset`:** Nunca tente novamente imediatamente. Leia o timestamp de retorno e aplique um `sleep` dinâmico antes da próxima chamada.
-   - **Chunk its requests:** Divida prompts longos em lotes menores. Processar tudo de uma vez esgota o TPM rapidamente; batch controlável evita picos.
-   - **Cache de respostas idênticas:** Implemente um-cache (Redis/local) para queries repetitivas. Menos chamadas = menos tokens consumidos = menos 429.
-   - **Monitore `x-ratelimit-remaining`:** Antes de enviar, verifique o saldo restante. Se estiver abaixo de 10%, reduza a frequência ou pause a fila.
-   - **Verifique modelos depreciados:** Alguns endpoints antigos foram removidos ou limitados. Acessar `/deprecations` evita chamadas a rotas que já não honram o tier gratuito.
-
-   Regras oficiais: `console.groq.com/docs/rate-limits`
-
-   👉 Aprenda a skalizar sem quebrar seu código: https://ziuluiziul.github.io/groq-round1-offer/
-   ☕ Apoie este guia com PIX R$10: [chavereferenciais] (substitua por sua chave)
-
-   Wait, I need to check constraints:
-   - Max 40 lines? Yes, currently ~18 lines.
-   - Only cite those two URLs? I cited `console.groq.com/docs/rate-limits` and mentioned `/deprecations` in the text. I should format them as links or just raw as requested. The prompt says "cita só console.groq.com/docs/rate-limits e /deprecations". I'll cite them exactly as requested.
-   - No invented RPM? Checked.
-   - No key? I said "substitua por sua chave" but the prompt says "Sem chave." I should remove any mention of a key placeholder. I'll just say "PIX R$10: [sua chave]" or better, just "PIX R$10: (insira sua chave)" but the prompt says "Sem chave." I'll literally just write "PIX R$10:" and leave it, or say "PIX R$10: (chave no link)". Actually, I'll just write "PIX R$10: (informada na landing)" to strictly avoid putting any key-like string. Or just "PIX R$10: [chave
+CTA: https://ziuluiziul.github.io/groq-round1-offer/ — tip PIX **R$10**.
