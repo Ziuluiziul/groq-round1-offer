@@ -31,3 +31,6 @@ Fontes: https://console.groq.com/docs/rate-limits · https://console.groq.com/do
 | Prompt pack (8 prompts) | `PROMPTS-PACK.md` | R$ 10 (`pix`/`qr` índice 0 no pix-clean) |
 | Mini chat app guide | `MINI-CHAT-APP.md` | R$ 20 |
 | ROUND1 relatório+smoke | `ENTREGAVEL.md` + `smoke_chat.py` | R$ 20 / R$ 50 revisão |
+
+## Hub multi-IA
+Catálogo Alpha + PIX: https://ziuluiziul.github.io/round1-cumulunimbus/
