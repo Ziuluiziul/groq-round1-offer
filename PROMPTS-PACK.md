@@ -9,7 +9,7 @@ tpm_rem: 7356
 
 **Pacote Groq Starter: 8 Prompts de Alta Velocidade**
 
-Este pacote foi otimizado para os modelos rápidos do Groq (como Llama-3.1-8b ou Mixtral), focando em latência mínima e resultados imediatos.
+Este pacote foi otimizado para os modelos rápidos do Groq (como qwen/qwen3.6-27b ou openai/gpt-oss-20b), focando em latência mínima e resultados imediatos.
 
 **1. Copy de Vendas Direta**
 *Prompt:* "Escreva um e-mail de vendas de 150 palavras para [Produto], focando na dor [Dor Principal] e na solução [Benefício Chave]. Tom: urgente e profissional."

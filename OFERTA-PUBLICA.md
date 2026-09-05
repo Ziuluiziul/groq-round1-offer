@@ -59,6 +59,8 @@ Fontes: https://console.groq.com/docs/rate-limits · https://console.groq.com/do
 | Prompt pack (8 prompts) | `PROMPTS-PACK.md` | R$ 10 |
 | Mini chat app guide | `MINI-CHAT-APP.md` | R$ 20 |
 | ROUND1 relatório+smoke | `ENTREGAVEL.md` + `smoke_chat.py` | R$ 20 / R$ 50 revisão |
+| Free limits cheatsheet | `FREE-LIMITS-CHEATSHEET.md` | R$ 10 |
+| Failover multi-modelo | `MULTI-MODEL-FAILOVER.md` + `multi_model_chat.py` | R$ 20 |
 | Micro-consultoria | — | R$ 100 |
 | Sessão + script | — | R$ 200 |
 | Apoio livre | — | livre |
