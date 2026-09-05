@@ -58,23 +58,15 @@ Antes da implementação em produção ou demonstração comercial, os seguintes
 *   [ ] **Validação de Modelo:** Assegurar que os IDs dos modelos (`openai/gpt-oss-20b`, etc.) estão corretamente mapeados na configuração do aplicativo, pois IDs incorretos retornam 404 ou 400, não 429.
 *   [ ] **Monitoramento de TPD:** Implementar alertas quando o consumo de tokens se aproximar do limite de 200.000 TPD para evitar interrupções no final do dia útil.
 
-## 5. Anexo: Tabela PIX Luiz por Path
+## 5. Anexo: PIX Luiz (paths oficiais)
 
-Abaixo, a estrutura de mapeamento de caminhos (paths) para fins de reembolso interno via PIX. Os valores são fixos por tipo de path, sem inclusão de payloads ou dados sensíveis.
+| Valor | Copia-e-cola | QR |
+|------|--------------|-----|
+| R$ 10 | `pix_copia_cola_0.txt` | `qr_0.png` |
+| R$ 20 | `pix-r20.txt` / `pix_copia_cola_1.txt` | `qr-r20.png` |
+| R$ 50 | `pix-r50.txt` / `pix_copia_cola_2.txt` | `qr-r50.png` |
+| R$ 100 | `pix_copia_cola_3.txt` | `qr_3.png` |
+| R$ 200 | `pix_copia_cola_4.txt` | `qr_4.png` |
+| Livre | `pix_copia_cola_5.txt` | `qr_5.png` |
 
-| Valor (R$) | Path Identificador | Descrição do Path |
-| :--- | :--- | :--- |
-| 10,00 | `pix_copia_cola_0` | Path base para cópia e cola padrão |
-| 10,00 | `qr_0` | Path base para leitura de QR Code padrão |
-| 10,00 | `pix_copia_cola_1` | Path secundário nível 1 |
-| 10,00 | `qr_1` | Path secundário nível 1 |
-| 10,00 | `pix_copia_cola_2` | Path secundário nível 2 |
-| 10,00 | `qr_2` | Path secundário nível 2 |
-| 10,00 | `pix_copia_cola_3` | Path terciário nível 3 |
-| 10,00 | `qr_3` | Path terciário nível 3 |
-| 10,00 | `pix_copia_cola_4` | Path terciário nível 4 |
-| 10,00 | `qr_4` | Path terciário nível 4 |
-| Livre | `pix_copia_cola_5` | Path livre de cobrança |
-| Livre | `qr_5` | Path livre de cobrança |
-
-**Observação:** Esta tabela serve apenas para referência de roteamento de pagamentos internos. Não há payloads associados a
+Payloads embutidos na landing Pages e nos ficheiros deste repo (override Luiz). USD→Binance (Luiz).
