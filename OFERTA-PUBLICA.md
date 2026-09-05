@@ -81,3 +81,7 @@ Catálogo Alpha + PIX: https://ziuluiziul.github.io/round1-cumulunimbus/
 - `STREAMING-SSE.md` + `stream_chat.py` — R$20
 - `JSON-MODE.md` + `json_chat.py` — R$10
 - `FIVE-429-ERRORS.md` (limpo) — R$10
+
+## Novos (labor free)
+- `TOOL-CALLING.md` + `tool_chat.py` — R$20
+- `PROMPT-GUARD.md` + `prompt_guard.py` — R$10
