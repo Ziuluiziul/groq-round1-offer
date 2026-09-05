@@ -24,11 +24,12 @@ fontes: https://console.groq.com/docs/deprecations · https://console.groq.com/d
 | `llama-3.1-8b-instant` | **16/08/2026** | `openai/gpt-oss-20b` |
 | `llama-3.3-70b-versatile` | **16/08/2026** | `openai/gpt-oss-120b` **ou** `qwen/qwen3.6-27b` |
 | `meta-llama/llama-4-scout-17b-16e-instruct` | **17/07/2026** | `openai/gpt-oss-120b` **ou** `qwen/qwen3.6-27b` |
+| `qwen/qwen3-32b` | **17/07/2026** | `openai/gpt-oss-120b` |
 | `meta-llama/llama-guard-4-12b` | **03/05/2026** | `openai/gpt-oss-safeguard-20b` |
 
 > Fonte oficial: <https://console.groq.com/docs/deprecations>
 
-Modelos auxiliares que permanecem disponíveis e podem ser usados como fallback: `qwen/qwen3-32b`.
+Nota: `qwen/qwen3-32b` também encerra em **17/07/2026** (substituir por `openai/gpt-oss-120b`). Não usar como fallback.
 
 ---
 
@@ -43,7 +44,7 @@ Modelos auxiliares que permanecem disponíveis e podem ser usados como fallback:
 
 Documentação: <https://console.groq.com/docs/rate-limits>
 
-> **Importante:** o plano Free não está listado na tabela “Developer” de `/docs/models`; ele segue a política *pay‑as‑you‑go* (PAYG) sem cobrança fixa.
+> **Importante:** Free ≠ coluna Developer em `/docs/models`. Free tem rate-limits próprios; Developer = PAYG (sem mensalidade fixa publicada) — só com OK Luiz.
 
 ---
 
