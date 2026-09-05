@@ -23,3 +23,11 @@ Copia-e-cola PIX:
 **USD / outras moedas:** settlement Binance do recebedor (Luiz) — sob consulta; sem wallet inventada aqui.
 
 Fontes: https://console.groq.com/docs/rate-limits · https://console.groq.com/docs/models
+
+
+## SKUs extra (mesmo PIX)
+| Produto | Arquivo | PIX |
+|---------|---------|-----|
+| Prompt pack (8 prompts) | `PROMPTS-PACK.md` | R$ 10 (`pix`/`qr` índice 0 no pix-clean) |
+| Mini chat app guide | `MINI-CHAT-APP.md` | R$ 20 |
+| ROUND1 relatório+smoke | `ENTREGAVEL.md` + `smoke_chat.py` | R$ 20 / R$ 50 revisão |
