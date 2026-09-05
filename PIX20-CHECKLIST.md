@@ -2,56 +2,24 @@
 produto: checklist 1o PIX R$20
 preco_BRL: 20
 pix: pix-r20
-gerado: qwen/qwen3.6-27b
+gerado: manual+qwen
 ---
 
-<think>
-Here's a thinking process:
+# Checklist 1º PIX Groq — R$20 (`pix-r20`)
 
-1.  **Analyze User Input:**
-   - **Language:** PT-BR (Brazilian Portuguese)
-   - **Format:** Markdown
-   - **Length:** 25-35 lines
-   - **Title:** «Checklist 1º PIX Groq R$20 (pix-r20)»
-   - **Content Requirements:**
-     - Numbered steps
-     - Step 1: Open `https://ziuluiziul.github.io/groq-round1-offer/`
-     - Step 2: Choose R$20 pix-r20
-     - Step 3: QR/EMV
-     - Step 4: Pay Luiz
-     - Step 5: Download SKUs (MINI-CURSO, Whisper, Compound)
-     - Include HF link: `https://ziulluizziul-groq-freetier-pix.static.hf.space/`
-     - Explicit constraints: "Sem chave." (No key), "Sem inventar RPM." (Don't make up RPM)
-   - **Tone/Style:** Clear, concise, checklist-style, markdown formatted.
+1. Abra a landing: https://ziuluiziul.github.io/groq-round1-offer/
+2. Confirme o mapa: R$20 = **`pix-r20`** (nunca `qr_0`). R$50 = **`qr_2`**.
+3. Escaneie `qr-r20.png` **ou** copie o EMV de `pix-r20.txt` na página.
+4. Pague no app do banco — recebedor **LUIZ GUSTAVO CORREIA**.
+5. Baixe os SKUs públicos: mini-curso, PDF, Whisper, Compound, failover, watchdog.
+6. Mirror HF: https://ziulluizziul-groq-freetier-pix.static.hf.space/
+7. Dev.to (CTA): https://dev.to/ziul_941087d2c1f1edc7d824/groq-free-tier-cheatsheet-de-limites-failover-multi-modelo-pt-br-297j
+8. Hub Alpha: https://ziuluiziul.github.io/round1-cumulunimbus/
+9. Comprovante só se quiser revisão; entrega já está na landing.
+10. Sem top-up Groq. Validar limites em https://console.groq.com/docs/rate-limits
 
-2.  **Deconstruct Requirements & Plan Structure:**
-   - Need a markdown document with exactly the specified title.
-   - Must have numbered steps (1 to 5, or maybe more if elaborated, but keep it tight to fit 25-35 lines).
-   - Each step should be clear and follow the sequence.
-   - Include the HF link appropriately.
-   - Ensure the constraints are respected (no key mentioned, no RPM mentioned/invented).
-   - Count lines carefully to stay within 25-35.
+## PIX R$20 EMV
 
-   Structure:
-   - Header
-   - Brief intro (optional, but keep it short)
-   - Numbered list (5 steps)
-   - HF link section
-   - Notes on constraints (if needed, but better implied or brief)
-   - Ensure line count fits.
-
-3.  **Draft Generation (Mental Refinement - PT-BR):**
-   ```markdown
-   # «Checklist 1º PIX Groq R$20 (pix-r20)»
-
-   1. Abra o navegador e acesse: https://ziuluiziul.github.io/groq-round1-offer/
-   2. Na tela de pagamento, localize e selecione a opção **R$20 pix-r20**.
-   3. Escolha o método de pagamento via **QR Code ou EMV** conforme preferência.
-   4. Realize a transferência para os dados de pagamento de **Luiz** (confira nome/CNPJ antes de confirmar).
-   5. Após a confirmação do PIX, clique em “Baixar” para obter os SKUs: **MINI-CURSO**, **Whisper** e **Compound**.
-
-   📦 **Download dos arquivos:**
-   - Aceso via repositório estático: https://ziulluizziul-groq-freetier-pix.static.hf.space/
-   - Os arquivos estão disponíveis imediatamente após a validação do pagamento.
-   - Não é necessária nenhuma chave de ativação ou token para utilizar os recursos.
-   - As capacidades de processamento seguem as
+```
+00020126330014br.gov.bcb.pix011108030362994520400005303986540520.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62100506padrao63043835
+```
