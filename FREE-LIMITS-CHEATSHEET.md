@@ -11,46 +11,51 @@ usage: {"queue_time": 0.10983526, "prompt_tokens": 465, "prompt_time": 0.0229093
 fontes: https://console.groq.com/docs/rate-limits · https://console.groq.com/docs/deprecations
 ---
 
-# Cheatsheet: Limites do Plano Free – GroqCloud (2026‑09)
+# Cheatsheet Free Plan Limits — GroqCloud (2026-09)
 
-> **Fonte oficial**: <https://console.groq.com/docs/rate-limits> (Free Plan Limits)
+Fonte: https://console.groq.com/docs/rate-limits (aba Free Plan Limits). Limites ao nível da **organização**. Cached tokens não contam. Free ≠ coluna Developer em /docs/models.
 
----
+## Chat Free (RPM / RPD / TPM / TPD)
 
-## 1. Visão geral dos limites
+| Model ID | RPM | RPD | TPM | TPD |
+|---|---:|---:|---:|---:|
+| `openai/gpt-oss-20b` | 30 | 1K | 8K | 200K |
+| `openai/gpt-oss-120b` | 30 | 1K | 8K | 200K |
+| `openai/gpt-oss-safeguard-20b` | 30 | 1K | 8K | 200K |
+| `qwen/qwen3.6-27b` | 30 | 1K | 8K | 200K |
+| `qwen/qwen3.8-27b` | 30 | 1K | 8K | 200K |
 
-| Limite | Valor (Free) | Unidade | Observação |
-|--------|--------------|---------|------------|
-| **RPM** (Requests per Minute) | 30 | req/min | Aplicável a *chat* e *compound* |
-| **RPD** (Requests per Day) | 1 000 | req/dia | Aplicável a *chat* e *compound* |
-| **TPM** (Tokens per Minute) | 8 000 | tokens/min | Aplicável a *chat* e *compound* |
-| **TPD** (Tokens per Day) | 200 000 | tokens/dia | Aplicável a *chat* e *compound* |
-| **RPD (Whisper)** | 2 000 | req/dia | 20 RPM |
-| **TPD (Whisper)** | 2 000 | tokens/dia | 20 RPM |
-| **RPD (Orpheus TTS)** | 100 | req/dia | 10 RPM |
-| **TPD (Orpheus TTS)** | 1 200 | tokens/dia | 10 RPM |
-| **RPD (Compound / Compound‑Mini)** | 250 | req/dia | 30 RPM |
-| **TPD (Compound / Compound‑Mini)** | 70 000 | tokens/dia | 30 RPM |
+## Outros Free (só se o entregável for desse cenário)
 
-> **Nota**: Os limites são **por organização**. Se a sua conta tem múltiplos usuários, o total é compartilhado entre eles.
+| Model ID | RPM | RPD | TPM | TPD | ASH | ASD |
+|---|---:|---:|---:|---:|---:|---:|
+| `groq/compound` | 30 | 250 | 70K | — | — | — |
+| `groq/compound-mini` | 30 | 250 | 70K | — | — | — |
+| `whisper-large-v3` | 20 | 2K | — | — | 7.2K | 28.8K |
+| `whisper-large-v3-turbo` | 20 | 2K | — | — | 7.2K | 28.8K |
+| `canopylabs/orpheus-v1-english` | 10 | 100 | 1.2K | 3.6K | — | — |
+| `canopylabs/orpheus-arabic-saudi` | 10 | 100 | 1.2K | 3.6K | — | — |
+| `meta-llama/llama-prompt-guard-2-22m` | 30 | 14.4K | 15K | 500K | — | — |
+| `meta-llama/llama-prompt-guard-2-86m` | 30 | 14.4K | 15K | 500K | — | — |
 
----
+## Headers (sempre)
 
-## 2. Respostas de erro e cabeçalhos
+| Header | Significado |
+|---|---|
+| `x-ratelimit-remaining-requests` | RPD restante |
+| `x-ratelimit-remaining-tokens` | TPM restante |
+| `retry-after` | só em 429 |
 
-| Código | Mensagem | Cabeçalhos relevantes |
-|--------|----------|-----------------------|
-| **429** | Too Many Requests | `Retry-After: <segundos>` |
-| **Headers** | | `x-ratelimit-remaining-requests: <RPD>`<br>`x-ratelimit-remaining-tokens: <TPM>` |
+## EOL (docs/deprecations)
 
-> **Dica**: Monitore esses cabeçalhos para evitar bloqueios inesperados.
+Shutdown **16/08/2026**: `llama-3.1-8b-instant` → `openai/gpt-oss-20b`; `llama-3.3-70b-versatile` → `openai/gpt-oss-120b` ou `qwen/qwen3.6-27b`.
 
----
+## Checklist
 
-## 3. Modelos Free (Chat)
+1. Key só via `GROQ_API_KEY` (env)
+2. `User-Agent: groq-python/1.0` + HTTP/1.1 se WAF
+3. GET `https://api.groq.com/openai/v1/models` para IDs vivos
+4. Em 429: respeitar `Retry-After`; não estourar RPD/TPM
+5. Developer = PAYG (sem mensalidade fixa publicada) — só com OK Luiz
 
-| Modelo | RPM | RPD | TPM | TPD |
-|--------|-----|-----|-----|-----|
-| `openai/gpt-oss-20b` | 30 | 1 000 | 8 000 | 200 000 |
-| `openai/gpt-oss-120b` | 30 | 1 000 | 8 000 | 200 000 |
-| `openai/gpt-oss-safeguard
+Ver também: `MULTI-MODEL-FAILOVER.md` + `multi_model_chat.py`
