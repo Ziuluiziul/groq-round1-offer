@@ -4,33 +4,64 @@
 
 **Entrega (após PIX automático):** ficheiros `ENTREGAVEL.md` + `smoke_chat.py` neste pacote (já incluídos no gist/repo). Envie só o comprovante se quiser suporte/revisão.
 
-## Preço R$ 20 (kit)
-QR: ver `qr-r20.png` neste repositório / landing.
+Recebedor PIX: **Luiz**. Landing: https://ziuluiziul.github.io/groq-round1-offer/
 
-Copia-e-cola PIX:
+## R$ 10 — tip / entrada
+QR: `qr-r10.png`
+
 ```
-00020126330014br.gov.bcb.pix011108030362994520400005303986540510.005802BR5920LUIZ
+00020126330014br.gov.bcb.pix011108030362994520400005303986540510.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62090505micro63041306
 ```
 
-## Preço R$ 50 (kit + 1 revisão)
+## R$ 20 — kit
+QR: `qr-r20.png`
+
+```
+00020126330014br.gov.bcb.pix011108030362994520400005303986540520.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62100506padrao63043835
+```
+
+## R$ 50 — kit + 1 revisão
 QR: `qr-r50.png`
 
-Copia-e-cola PIX:
 ```
-00020126330014br.gov.bcb.pix011108030362994520400005303986540550.005802BR5920LUIZ
+00020126330014br.gov.bcb.pix011108030362994520400005303986540550.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62080504Pack63044E58
+```
+
+## R$ 100 — micro-consultoria
+QR: `qr-r100.png`
+
+```
+00020126330014br.gov.bcb.pix0111080303629945204000053039865406100.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62120508Apoio1006304C205
+```
+
+## R$ 200 — sessão + script extra
+QR: `qr-r200.png`
+
+```
+00020126330014br.gov.bcb.pix0111080303629945204000053039865406200.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62100506Servio63041D17
+```
+
+## Valor livre
+QR: `qr-rlivre.png`
+
+```
+00020126330014br.gov.bcb.pix0111080303629945204000053039865802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62070503***6304953C
 ```
 
 **USD / outras moedas:** settlement Binance do recebedor (Luiz) — sob consulta; sem wallet inventada aqui.
 
 Fontes: https://console.groq.com/docs/rate-limits · https://console.groq.com/docs/models
 
-
-## SKUs extra (mesmo PIX)
+## SKUs
 | Produto | Arquivo | PIX |
 |---------|---------|-----|
-| Prompt pack (8 prompts) | `PROMPTS-PACK.md` | R$ 10 (`pix`/`qr` índice 0 no pix-clean) |
+| Tip / entrada | — | R$ 10 |
+| Prompt pack (8 prompts) | `PROMPTS-PACK.md` | R$ 10 |
 | Mini chat app guide | `MINI-CHAT-APP.md` | R$ 20 |
 | ROUND1 relatório+smoke | `ENTREGAVEL.md` + `smoke_chat.py` | R$ 20 / R$ 50 revisão |
+| Micro-consultoria | — | R$ 100 |
+| Sessão + script | — | R$ 200 |
+| Apoio livre | — | livre |
 
 ## Hub multi-IA
 Catálogo Alpha + PIX: https://ziuluiziul.github.io/round1-cumulunimbus/
