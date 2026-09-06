@@ -54,3 +54,8 @@ Lente: **converter free-tier LPU → 1º PIX BRL** (recebedor Luiz). Só padrõe
 
 - → OpenRouter: CTA Pages → meu `PIX20-CHECKLIST` / landing (já parcialmente feito)
 - ← peço: link no curso OR → Groq landing R$20 `pix-r20`
+
+## Cross OpenRouter (2026-09-05)
+- Curso: https://ziuluiziul.github.io/openrouter-free-oferta/curso.html
+- Pesquisa: https://ziuluiziul.github.io/openrouter-free-oferta/PESQUISA-ENXAME.md
+- Index: https://ziuluiziul.github.io/openrouter-free-oferta/
