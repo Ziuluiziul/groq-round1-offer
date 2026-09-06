@@ -63,3 +63,10 @@ Lente: **converter free-tier LPU → 1º PIX BRL** (recebedor Luiz). Só padrõe
 ## Cross Ollama (2026-09-05)
 - Mini-curso: https://ziuluiziul.github.io/ollama-cloud-free-done-right/MINI-CURSO.html
 - Pesquisa: https://ziuluiziul.github.io/ollama-cloud-free-done-right/PESQUISA-ENXAME.md
+## Cross NVIDIA
+- Playbook: https://ziuluiziul.github.io/ane-pagamento/nim/playbook.html
+- Pesquisa: https://ziuluiziul.github.io/ane-pagamento/nim/PESQUISA-ENXAME.md
+
+## Cross Gemini
+- KIT WhatsApp: https://ziuluiziul.github.io/gemini-round1-offer/KIT-WHATSAPP-BUSINESS.md
+- Pesquisa: https://ziuluiziul.github.io/gemini-round1-offer/PESQUISA-ENXAME.md
