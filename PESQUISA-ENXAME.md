@@ -59,3 +59,7 @@ Lente: **converter free-tier LPU → 1º PIX BRL** (recebedor Luiz). Só padrõe
 - Curso: https://ziuluiziul.github.io/openrouter-free-oferta/curso.html
 - Pesquisa: https://ziuluiziul.github.io/openrouter-free-oferta/PESQUISA-ENXAME.md
 - Index: https://ziuluiziul.github.io/openrouter-free-oferta/
+
+## Cross Ollama (2026-09-05)
+- Mini-curso: https://ziuluiziul.github.io/ollama-cloud-free-done-right/MINI-CURSO.html
+- Pesquisa: https://ziuluiziul.github.io/ollama-cloud-free-done-right/PESQUISA-ENXAME.md
